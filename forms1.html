@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DETAILS</title>
+</head>
+<body>
+    <form action="forms.html">
+        <marquee behavior=""direction="right" bgcolor="green">
+            <h1>STUDENT DETAILS</h1>
+        </marquee>
+        <fieldset>
+            <label for="fname">FIRSTNAME</label>
+            <input type="text" id="fname" required pattern="[A-Za-z]{3,8}"><br><br>
+            <label for="lname">LASTNAME</label>
+            <input type="text" id="lname" required><br><br>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" required><br><br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" required><br><br>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="text" required id="phone" pattern="[6-9]{1}[0-9]{9}"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>EDUCATION DETAILS</legend>
+            <label for="">department</label><br><br>
+            <input type="radio" id="CSE" name ="dept">
+            <label for="CSE">CSE</label>
+            <input type="radio" id="ec" name ="dept">
+            <label for="ec">ec</label>
+            <input type="radio" id="mca" name ="dept">
+            <label for="mca">mca</label>
+            <input type="radio" id="mba" name ="dept">
+            <label for="mba">mba</label>
+            <input type="radio" id="btech" name ="dept">
+            <label for="btech">btech</label><br><br>
+            <label for="">YEAR OF GRADUATION</label>
+            <input list="yog">
+            <datalist id="yog">
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </datalist><br><br>
+            <label for="">SKILLS</label><br>
+            <input type="checkbox" id="sql">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="java">
+            <label for="java">JAVA</label><br>
+            <input type="checkbox" id="python">
+            <label for="python">PYTHON</label><br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="advance java">
+            <label for="advance java">ADVANCE JAVA</label><br>
+         </fieldset><br>
+        <input type="SUBMIT">
+
+    </form>
+    
+</body>
+</html>
